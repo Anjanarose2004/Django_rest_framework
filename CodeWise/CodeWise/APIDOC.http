@@ -1,0 +1,100 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+  "title": "Factorial",
+  "language": "python",
+  "difficulty_level": "medium",
+  "topic":"for loop",
+  "score":10,
+  "note":"Write a program to find the factorial of a number using a for loop",
+  "sample_input":"5",
+  "sample_output":"120"
+  
+}
+
+###
+GET http://127.0.0.1:8000/questions/2/
+Accept: application/json
+
+
+
+###
+PUT http://127.0.0.1:8000/questions/1/
+Content-Type:  application/json
+
+{
+  "title": "Factorial",
+  "language": "java",
+  "difficulty_level": "easy",
+  "topic":"for loop",
+  "score":7,
+  "note":"Write a program to find the factorial of a number using a for loop",
+  "sample_input":"5",
+  "sample_output":"120"
+  
+}
+
+###
+DELETE http://127.0.0.1:8000/questions/1/
+
+###
+GET http://127.0.0.1:8000/questions/1/
+Accept: application/json
+
+
+
+#answer submission
+###
+GET http://127.0.0.1:8000/submissions/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/submissions/
+Content-Type: application/json
+
+{
+  "question_id":1,
+  "answer":"prime number",
+  "owner":"Ram"
+}
+
+###
+GET http://127.0.0.1:8000/submissions/1/
+Accept:application/json
+
+# ###
+# GET http://127.0.0.1:8000/submissions/10/
+# Accept:application/json
+#it will not display error and it displays
+# "detail": "No SubmissionsDb matches the given query."
+#if we use get_object_404
+#otherwise it displays error
+
+
+###
+PUT http://127.0.0.1:8000/submissions/1/
+Content-Type: application/json
+{
+    "question_id":2,
+    "answer":"7 is a prime number",
+    "owner":"Anu"
+}
+
+###
+PUT http://127.0.0.1:8000/submissions/1/evaluate/
+Content-Type: application/json
+
+{
+    "points":3,
+    "remarks":"Below average"
+}
+
+ 

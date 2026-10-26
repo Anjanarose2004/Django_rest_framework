@@ -1,0 +1,80 @@
+#Api call for adding two numbers
+###
+POST http://127.0.0.1:8000/addition/
+Content-Type: application/json
+
+{
+    "num1": 10,
+    "num2": 20
+}
+
+#API for subtraction of two numbers
+###
+POST http://127.0.0.1:8000/subtraction/
+Content-Type:application/json
+
+{
+    "num1": 30,
+    "num2":10
+}
+
+#API for multiplication of two numbers
+###
+POST http://127.0.0.1:8000/multiplication/
+Content-Type:application/json
+
+{
+    "num1": 10,
+    "num2": 20
+}
+
+#API for division of two numbers
+###
+POST http://127.0.0.1:8000/division/
+Content-Type:application/json
+
+{
+    "num1": 40,
+    "num2": 2
+}
+
+#Api for modulus of two numbers
+###
+POST http://127.0.0.1:8000/modulus/
+Content-Type:application/json
+
+{
+    "num1": 10,
+    "num2": 3
+}
+
+
+#API for BMI calculation
+###
+POST http://127.0.0.1:8000/bmi/
+Content-Type:application/json
+
+{
+    "weight": 51,
+    "height": 155
+}
+
+#Api for age calculation
+###
+POST http://127.0.0.1:8000/age/
+Content-Type:application/json
+
+{
+    "birth_year":1999,
+    "current_year":2026,
+}
+
+#API of percentagwe
+###
+POST  http://127.0.0.1:8000/percentage/
+Content-Type: application/json
+
+{
+    "total_marks":500,
+    "obtained_marks":450
+}

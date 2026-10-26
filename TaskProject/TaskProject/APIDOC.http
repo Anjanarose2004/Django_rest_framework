@@ -1,0 +1,50 @@
+#api for fact
+###
+POST http://127.0.0.1:8000/factorial/
+Content-Type: application/json
+
+{
+    "numbers":5
+}
+
+#api for simple interest
+###
+POST http://127.0.0.1:8000/simple/
+Content-Type: application/json
+
+{
+    "principle":1000,
+    "rate":5,
+    "time":2
+}
+
+#API for discount
+###
+POST http://127.0.0.1:8000/discount/
+Content-Type: application/json
+
+{
+    "Price":2000,
+    "Discount_percentage":10
+}
+
+#API FOR PROFIT
+###
+POST http://127.0.0.1:8000/profit/
+Content-Type: application/json
+
+{
+    "cost_price":500,
+    "selling_price":650
+}
+
+#API FOR SALARY
+###
+POST http://127.0.0.1:8000/salary/
+Content-Type: application/json
+
+{
+    "basic_salary":30000,
+    "bonus":5000,
+    "deduction":2000
+}

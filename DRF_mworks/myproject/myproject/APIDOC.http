@@ -1,0 +1,53 @@
+#API FOR MORNING
+###
+Get http://127.0.0.1:8000/morning/
+Accept:application/json
+
+#API FOR ADDITION
+###
+Post http://127.0.0.1:8000/addition/
+Content-Type: application/json
+
+{
+    "num1":4,
+    "num2":5
+}
+
+#API FOR SUBSTRACTION
+###
+Post http://127.0.0.1:8000/substraction/
+Content-Type: application/json
+
+{
+    "num1":14,
+    "num2":5
+}
+
+#API FOR MULTIPLICATION
+###
+Post http://127.0.0.1:8000/multiplication/
+Content-Type: application/json
+
+{
+    "num1":5,
+    "num2":5
+}
+
+#API FOR LARGEST
+###
+Post http://127.0.0.1:8000/largest/
+Content-Type: application/json
+
+{
+    "num1":5,
+    "num2":10,
+    
+}
+
+###
+Post http://127.0.0.1:8000/temp/
+Content-Type: application/json
+
+{
+    "temp":41
+}

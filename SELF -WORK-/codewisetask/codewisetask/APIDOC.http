@@ -1,0 +1,20 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+  "title": "Factorial of a number ?",
+  "language": "Python",
+  "difficulty_level": "Easy",
+  "topic":"for loop",
+  "score":5,
+  "note":"This is a simple question to find factorial of a number using for loop",
+  "sample_input":"5",
+  "sample_output":"120"
+  
+}

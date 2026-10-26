@@ -1,0 +1,10 @@
+#API call for adding two numbers
+
+###
+POST http://127.0.0.1:8000/addition/
+Content-Type:application/json
+
+{
+    "num1":10,
+    "num2":20,
+}
